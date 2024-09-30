@@ -1,25 +1,30 @@
 # YouTube Music RVX LITE Modules
-Patch version: v4.13.1
+
+- Patch version: v4.14.1
 
 # Changelogs 
 
-- bumped YouTube Music base to v7.17.51 ( for android 8+ )
-- Updated v6.42.55 with the latest patches for Android 7 users
-- feat(YouTube Music): add Change share sheet patch inotia00/ReVanced_Extended#1983
-- fix(YouTube Music/Return YouTube Dislike): likes and dislikes are switched in RTL layout inotia00/ReVanced_Extended#2353
-- fix(YouTube Music/SponsorBlock): SponsorBlock segments at the end of a song cause the player to get stuck inotia00/ReVanced_Extended#2360
-- fix(YouTube Music/SponsorBlock): skip
-- feat(YouTube Music/Custom branding icon for YouTube Music): add patch option RestoreOldSplashIcon inotia00/ReVanced_Extended#2368
-- feat(YouTube Music/Hide ads): add Hide promotion alert banner setting
-- feat(YouTube Music/Video playback): add an option to disable toasts when changing the default values
-- fix(YouTube Music/GmsCore support): YT Music crashes when using the Open GmsCore setting inotia00/ReVanced_Extended#2352
-- feat(YouTube Music): rename Enable Cairo splash animation to Disable Cairo splash animation inotia00/ReVanced_Extended#2366
-- feat(YouTube Music/Player components): add settings Disable miniplayer gesture, Disable player gesture inotia00/ReVanced_Extended#2097
-- fix(YouTube Music/Hide account components): no longer hiding Settings inotia00/ReVanced_Extended#1424
-- refactor(YouTube Music/Settings): fix unchecked cast
-- feat(YouTube Music/Hide layout components): add Hide settings menu setting inotia00/ReVanced_Extended#1899
-- feat(YouTube Music): add Alternative domain patch #64
-- feat(YouTube Music): rename patch Alternative domain to Bypass image region restrictions (Reflecting changes in ReVanced)
+- bumped YouTube Music base to v7.20.51 ( for android 8+ )
+- Added support for v7.16.53 , v6.42.55 (A7+) , v6.20.51 (A5-6+)
+- fix(YouTube Music/Player components): Remember shuffle state setting does not remember the correct state
+- feat(YouTube Music): add Visual preferences icons for YouTube Music patch inotia00/ReVanced_Extended#2216
+- feat(YouTube Music/Custom branding icon): update monochrome icon for afn_red & afn_blue
+- fix(YouTube Music/Disable Cairo splash animation): some versions are recognized as unpatchable even though they can be patched
+- fix(YouTube Music/Disable auto captions): captions cannot be changed when Disable forced auto captions is turned on
+- fix(YouTube Music/Flyout menu components): Hide 3-column component setting does not work
+- fix(YouTube Music/Flyout menu components): unable to patch due to incorrect format
+- fix(YouTube Music/GmsCore support): can't share the stories to Facebook, Instagram and Snapchat inotia00/ReVanced_Extended#1830
+- fix(YouTube Music/Player components): crash at first launch on old clients inotia00/ReVanced_Extended#2377
+- fix(YouTube Music/SponsorBlock): SponsorBlock does not skip segment at the beginning when in background inotia00/ReVanced_Extended#2396
+- fix(YouTube Music/SponsorBlock): SponsorBlock skips entire song when in background inotia00/ReVanced_Extended#2379
+- feat(YouTube Music/Translations): update translation
+
+# Version Comparison 
+
+- v6.20.51 : For Android 5-6 users
+- v6.42.55 : For Android 7 users 
+- v7.16.53 : This version is the latest recommend version for patching. But It's only recommended to use, if you're facing this issue : inotia00/ReVanced_Extended#2382
+- v7.20.51 : Latest version of YouTube Music For Android 8+ users. Everything works fine on this version & it's completely stable . There are only 1% chance to trigger this A/B test : inotia00/ReVanced_Extended#2382 while using this build!! 
 
 **Thanks to @inotia00**
 
