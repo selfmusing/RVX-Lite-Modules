@@ -2,5 +2,5 @@
   "version": "v6.42.55",
   "versionCode": 64255234,
   "zipUrl": "https://github.com/selfmusing/RVX-Lite-Modules/releases/download/2024-10-01/6.42.55-arm7-rvf_red.zip",
-  "changelog": "https://github.com/selfmusing/RVX-Lite-Modules/blob/main/rvx-ytm/changelog.md"
+  "changelog": "https://raw.githubusercontent.com/selfmusing/RVX-Lite-Modules/main/rvx-ytm/changelog.md"
 }
