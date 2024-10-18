@@ -1,33 +1,43 @@
 # YouTube RVX LITE Modules
 
-Patch version: v4.13.1
+Patch version: v4.15.1-dev.3
 
 # Changelogs 
 
 - bumped YouTube base to 19.16.39
  inotia00/ReVanced_Extended#2241
-- Also included support for v19.26.42 ( Alternative Thumbnails & Bypass image restrictions is not available on these builds )
-- feat(YouTube): add Spoof streaming data patch ReVanced/revanced-patches#3582
-- feat(YouTube): remove Spoof client patch
-- feat(YouTube/Hide ads): add Hide promotion alert banner setting
-- feat(YouTube/Hide feed components): add syntax to match whole keywords and not substrings ReVanced/revanced-patches#3592
-- feat(YouTube/Hide player flyout menu): add Hide Sleep timer menu setting (not added in settings yet)
-- feat(YouTube/Overlay buttons): add Collapse button and update thin-type overlay button icons #75
-feat(YouTube/Overlay buttons): change patch options inotia00/ReVanced_Extended#2359
-- feat(YouTube/Player components): add Disable switch mix playlists setting ReVanced/revanced-patches#3597
-- feat(YouTube/Remove background playback restrictions): match with ReVanced
-- feat(YouTube/Shorts components): add Hide Use this sound button setting
-- feat(YouTube/Shorts components): add settings - Hide floating button, Hide Trends button, Hide Use template button
-- feat(YouTube/Shorts components): clarify the description of some settings inotia00/ReVanced_Extended#2357
-- feat(YouTube/Spoof streaming data): allow forcing AVC codec with iOS ReVanced/revanced-patches#3570
-- feat(YouTube/Video playback): add Disable playback speed for music setting
-- feat(YouTube/Video playback): add an option to disable toasts when changing the default values
-- fix(YouTube/Disable force auto captions): patch doesn't work with Shorts inotia00/ReVanced_Extended#2346
-- fix(YouTube/Hide feed components) : community posts aren't hiding in related videos below the player inotia00/ReVanced_Extended#2334
-- fix(YouTube/Hide feed components): Hide expandable chip under videos setting does not work (A/B tests) inotia00/ReVanced_Extended#2173
-- fix(YouTube/Navigation bar components): navigation buttons are not hidden when Cairo navigation bar is applied (A/B tests) inotia00/ReVanced_Extended#2169
-- fix(YouTube/Shorts components): Hide Use this sound button doesn't work inotia00/ReVanced_Extended#2356
-- fix(YouTube/SponsorBlock): handle if the user enters an invalid number into any SB settings
+- Also posted BETA builds ( v19.30.39 )
+- chore(YouTube/PlayerType): supplement PlayerType limits under certain conditions
+- feat(YouTube/Hide comments components): add Hide highlighted search links setting inotia00/ReVanced_Extended#2435
+- feat(YouTube/Hide feed components): remove Hide UPCOMING video setting inotia00/ReVanced_Extended#2427 (comment)
+- feat(YouTube/Shorts components): add Hide in channel setting (Hide the Shorts shelf on the channel home tab)
+- feat(YouTube/Spoof app version): enabled by default in YouTube 19.16.39+ inotia00/ReVanced_Extended#2419 (comment)
+- feat(YouTube/Swipe controls): add Swipe sensitivity settings ReVanced/revanced-patches#1646
+- fix(YouTube/Hide ads): Hide view products banner not working (untested) inotia00/ReVanced_Extended#2437
+- fix(YouTube/Hide ads): new type of ads are not hidden
+- fix(YouTube/Hide feed components): Hide carousel shelf setting hides the library shelf
+- fix(YouTube/Hook YouTube Music actions): app crashes when first installed
+- fix(YouTube/LithoFilter): remove unused keywords
+- fix(YouTube/Spoof streaming data): wrong register used
+- feat(YouTube/YT Music - Return YouTube Username): add Display format setting
+- feat(YouTube/YT Music): add Return YouTube Username patch
+- feat(YouTube/YT Music - Return YouTube Dislike): add Show estimated likes setting ReVanced/revanced-patches#3667
+- fix(YouTube/YT Music - GmsCore support): unimplemented service in GmsCore causes memory leak ReVanced/revanced-patches#3768
+- chore(YouTube): replace with a fingerprint that supports a wider range of versions
+- feat(YouTube/Hide player flyout menu): add Hide 1080p Premium menu setting ReVanced/revanced-patches#3760
+- feat(YouTube/Seekbar components): add Disable seekbar chapters setting #90
+- feat(YouTube/Spoof app version): add target version 19.13.37 - Restores old style Rolling number animations inotia00/ReVanced_Extended#2419
+- feat(YouTube/Toolbar components): add Hide YouTube Doodles setting ReVanced/revanced-patches#3743
+- fix(YouTube/Custom Shorts action buttons): low image quality for Cairo option on YouTube 18.29.38
+- fix(YouTube/Hide feed components): change default offset for Hide related videos setting
+- fix(YouTube/Settings): EditTextDialog's background color does not match when Theme patch is excluded inotia00/ReVanced_Extended#2422
+- fix(YouTube/Settings): If the title of the setting is too long, it will be displayed as ...
+- fix(YouTube/Shorts components): Shorts are hidden in Watch history shelf in Library tab
+- fix(YouTube/Shorts components): Hide paused header setting does not work
+- fix(YouTube/Shorts components): Replace channel handle setting no longer uses RSS feeds to retrieve usernames
+- fix(YouTube/Spoof streaming data): Authorization key is always included when fetching an API, even if there is no Authorization in the header (e.g. the user is not logged in or using the Incognito Mode)
+- fix(YouTube/Spoof streaming data): playback issues occur when data connection changes or RVX has been open for a long time inotia00/ReVanced_Extended#2416
+- fix(YouTube/Spoof streaming data): revert reduce response timeout and cache size
 
 - Check this section to read more about the new changes: https://github.com/inotia00/revanced-patches/releases
 
@@ -37,7 +47,6 @@ feat(YouTube/Overlay buttons): change patch options inotia00/ReVanced_Extended#2
 - If you have playback issues, turn on the settings in the following path:
 Settings > ReVanced Extended > Miscellaneous > Spoof streaming data > Enable Spoof streaming Data toggle
 
-
 **Thanks to inotia00**
 
-Telegram: https://t.me/rvx_lite
+Telegram: https://t.me/rvx_lite ( JOIN FOR SUPPORT )
