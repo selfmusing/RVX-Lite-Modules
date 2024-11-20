@@ -1,43 +1,50 @@
 # YouTube RVX LITE Modules
 
-Patch version: v4.15.1-dev.3
+Patch version: v4.16.1
 
 # Changelogs 
 
 - bumped YouTube base to 19.16.39
  inotia00/ReVanced_Extended#2241
-- Also posted BETA builds ( v19.30.39 )
-- chore(YouTube/PlayerType): supplement PlayerType limits under certain conditions
-- feat(YouTube/Hide comments components): add Hide highlighted search links setting inotia00/ReVanced_Extended#2435
-- feat(YouTube/Hide feed components): remove Hide UPCOMING video setting inotia00/ReVanced_Extended#2427 (comment)
-- feat(YouTube/Shorts components): add Hide in channel setting (Hide the Shorts shelf on the channel home tab)
-- feat(YouTube/Spoof app version): enabled by default in YouTube 19.16.39+ inotia00/ReVanced_Extended#2419 (comment)
-- feat(YouTube/Swipe controls): add Swipe sensitivity settings ReVanced/revanced-patches#1646
-- fix(YouTube/Hide ads): Hide view products banner not working (untested) inotia00/ReVanced_Extended#2437
-- fix(YouTube/Hide ads): new type of ads are not hidden
+- Also providing BETA updates ( v19.30.39 )
+- chore(YouTube/InclusiveSpan): check in advance whether debug log is enabled to prevent unnecessary toString invokes
+
+- feat(YouTube/Description components): add Hide AI-generated video summary section setting inotia00/ReVanced_Extended#2473
+
+- feat(YouTube/Hide ads): add Hide player shopping shelf setting inotia00/ReVanced_Extended#2447
+- feat(YouTube/Hide feed components): add Hide floating button setting **[Screenshot](https://www.reddit.com/r/youtube/comments/1fq2bma/how_do_i_remove_this_button)**
+
+- feat(YouTube/Seekbar components): add info to Append timestamp information summary about tapping the appended information **[#93](https://github.com/inotia00/revanced-patches/pull/93)**
+- feat(YouTube/Shorts components): remove Hide in watch history setting
+- feat(YouTube/Spoof app version): remove obsolete 17.33.42 spoof target ReVanced/revanced-patches#3825
+- feat(YouTube/Spoof app version): remove obsolete 19.13.37 spoof target inotia00/ReVanced_Extended#2477
+
+- feat(YouTube/Spoof streaming data): add iOS Compatibility mode setting
+- feat(YouTube/Spoof streaming data): change default client to iOS
+- feat(YouTube/Spoof streaming data): update the hardcoded iOS client version (partial support for opus codec) inotia00/ReVanced_Extended#2480
 - fix(YouTube/Hide feed components): Hide carousel shelf setting hides the library shelf
-- fix(YouTube/Hook YouTube Music actions): app crashes when first installed
-- fix(YouTube/LithoFilter): remove unused keywords
-- fix(YouTube/Spoof streaming data): wrong register used
-- feat(YouTube/YT Music - Return YouTube Username): add Display format setting
-- feat(YouTube/YT Music): add Return YouTube Username patch
-- feat(YouTube/YT Music - Return YouTube Dislike): add Show estimated likes setting ReVanced/revanced-patches#3667
-- fix(YouTube/YT Music - GmsCore support): unimplemented service in GmsCore causes memory leak ReVanced/revanced-patches#3768
-- chore(YouTube): replace with a fingerprint that supports a wider range of versions
-- feat(YouTube/Hide player flyout menu): add Hide 1080p Premium menu setting ReVanced/revanced-patches#3760
-- feat(YouTube/Seekbar components): add Disable seekbar chapters setting #90
-- feat(YouTube/Spoof app version): add target version 19.13.37 - Restores old style Rolling number animations inotia00/ReVanced_Extended#2419
-- feat(YouTube/Toolbar components): add Hide YouTube Doodles setting ReVanced/revanced-patches#3743
-- fix(YouTube/Custom Shorts action buttons): low image quality for Cairo option on YouTube 18.29.38
-- fix(YouTube/Hide feed components): change default offset for Hide related videos setting
-- fix(YouTube/Settings): EditTextDialog's background color does not match when Theme patch is excluded inotia00/ReVanced_Extended#2422
-- fix(YouTube/Settings): If the title of the setting is too long, it will be displayed as ...
-- fix(YouTube/Shorts components): Shorts are hidden in Watch history shelf in Library tab
-- fix(YouTube/Shorts components): Hide paused header setting does not work
-- fix(YouTube/Shorts components): Replace channel handle setting no longer uses RSS feeds to retrieve usernames
-- fix(YouTube/Spoof streaming data): Authorization key is always included when fetching an API, even if there is no Authorization in the header (e.g. the user is not logged in or using the Incognito Mode)
-- fix(YouTube/Spoof streaming data): playback issues occur when data connection changes or RVX has been open for a long time inotia00/ReVanced_Extended#2416
-- fix(YouTube/Spoof streaming data): revert reduce response timeout and cache size
+- fix(YouTube/Return YouTube Dislike): height of the separator does not matchs inotia00/ReVanced_Extended#2474
+- fix(YouTube/Settings): app crashes due to incorrect settings arrangement
+- fix(YouTube/Settings): remove duplicate descriptions
+- fix(YouTube/Settings): restart dialog appears twice when the app is first installed
+
+- fix(YouTube/Shorts components): Shorts shown in Home feed inotia00/ReVanced_Extended#2467
+
+- fix(YouTube/Shorts components): Hide Shorts shelves setting sometimes hides shelves in the library tab
+- fix(YouTube/SponsorBlock): wrong segment behavior selected inotia00/ReVanced_Extended#2468
+- fix(YouTube/Toolbar components): premium header not applied when Hide YouTube Doodles is turned on
+
+- fix(YouTube/Video playback): custom playback speed not working due to A/B tests ReVanced/revanced-patches#3817
+- feat(YouTube/YT - GmsCore support): add patch option Disable GmsService Broker inotia00/ReVanced_Extended#2442 (comment)
+- feat(YouTube/Player components): add Sanitize video subtitle setting
+
+- feat(YouTube/Spoof app version): change the default to off and show the dialog when the app is first launched (YouTube 19.16.39+) inotia00/ReVanced_Extended#2419 (comment)
+
+- fix(YouTube/Hide ads): Hide view products banner setting not working inotia00/ReVanced_Extended#2437
+- fix(YouTube/Hide feed components): Hide carousel shelf setting hides the library shelf
+- fix(YouTube/Hide feed components): new type of Playable is not hidden
+- fix(YouTube/Shorts components): app crashes when Replace channel handle setting is turned on
+
 
 - Check this section to read more about the new changes: https://github.com/inotia00/revanced-patches/releases
 
