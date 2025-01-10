@@ -1,52 +1,49 @@
 # YouTube RVX LITE Modules
 
-Patch version: v4.16.1
+Patch version: v5.2.1
 
 # Changelogs 
 
-- bumped YouTube base to 19.16.39
- inotia00/ReVanced_Extended#2241
-- Also providing BETA updates ( v19.30.39 )
-- chore(YouTube/InclusiveSpan): check in advance whether debug log is enabled to prevent unnecessary toString invokes
+- bumped YouTube base to 19.44.39 
+- Also providing Alternative updates for 19.16.39
+- chore(YouTube - Video playback): Disable music playback speed is applied a little faster
+- feat(YouTube - Change start page): Add more start page **[#115](https://github.com/inotia00/revanced-patches/pull/115)**
+- feat(YouTube - Fullscreen components): Add Enter fullscreen mode setting
+- feat(YouTube - Fullscreen components): Add Exit fullscreen mode setting
+- feat(YouTube - Fullscreen components): Remove Force fullscreen setting
+- feat(YouTube - Hide layout components): Add Disable translucent status bar setting
+- feat(YouTube - Spoof streaming data): Add setting to change PoToken / Visitor Data **[inotia00/ReVanced_Extended#2630 (comment)](https://github.com/inotia00/ReVanced_Extended/issues/2630#issuecomment-2566310025)**
+- feat(YouTube - Spoof streaming data): Remove Use Android clients only setting, restore Force iOS AVC setting
+feat(YouTube - Swipe controls): Add settings - Disable swipe to enter fullscreen mode, Disable swipe to exit fullscreen mode & Change default values - Disable swipe to change video, Disable watch panel gestures
+feat(YouTube - Video playback): Improve Disable music playback speed setting
+- fix(YouTube - Disable haptic feedback): Disable seek haptic feedback doesn't work inotia00/ReVanced_Extended#2579
+- fix(YouTube - Hide feed components): Your Movies is empty when turning on Hide carousel shelf
+- fix(YouTube - Overlay buttons): Overlay buttons do not disappear immediately when fullscreen button is clicked
 
-- feat(YouTube/Description components): add Hide AI-generated video summary section setting inotia00/ReVanced_Extended#2473
+- fix(YouTube - Overlay buttons): Restrict the version that can use the patch options Bottom margin and Wider between-buttons space to YouTube 19.16.39 (Close inotia00/ReVanced_Extended#2608)
+- fix(YouTube - Spoof streaming data): Enhanced bitrate not available on Android VR, Android TV
 
-- feat(YouTube/Hide ads): add Hide player shopping shelf setting inotia00/ReVanced_Extended#2447
-- feat(YouTube/Hide feed components): add Hide floating button setting **[Screenshot](https://www.reddit.com/r/youtube/comments/1fq2bma/how_do_i_remove_this_button)**
+- fix(YouTube - Spoof streaming data): Mark login-required client
+- fix(YouTube - Swipe controls): Gestures are not disabled in the channel bar even though Disable watch panel gestures is turned on (YouTube 19.16.39+)
+- fix(YouTube - Toolbar components): Use Cairo icon for settings icon when Replace Create button is turned on inotia00/ReVanced_Extended#2614
+- fix(GmsCore support): Do not show battery optimization error on Android Automotive devices (Google built-in)
 
-- feat(YouTube/Seekbar components): add info to Append timestamp information summary about tapping the appended information **[#93](https://github.com/inotia00/revanced-patches/pull/93)**
-- feat(YouTube/Shorts components): remove Hide in watch history setting
-- feat(YouTube/Spoof app version): remove obsolete 17.33.42 spoof target ReVanced/revanced-patches#3825
-- feat(YouTube/Spoof app version): remove obsolete 19.13.37 spoof target inotia00/ReVanced_Extended#2477
+- fix(YouTube - Toolbar components): Hide voice search button setting does not work inotia00/ReVanced_Extended#2580
 
-- feat(YouTube/Spoof streaming data): add iOS Compatibility mode setting
-- feat(YouTube/Spoof streaming data): change default client to iOS
-- feat(YouTube/Spoof streaming data): update the hardcoded iOS client version (partial support for opus codec) inotia00/ReVanced_Extended#2480
-- fix(YouTube/Hide feed components): Hide carousel shelf setting hides the library shelf
-- fix(YouTube/Return YouTube Dislike): height of the separator does not matchs inotia00/ReVanced_Extended#2474
-- fix(YouTube/Settings): app crashes due to incorrect settings arrangement
-- fix(YouTube/Settings): remove duplicate descriptions
-- fix(YouTube/Settings): restart dialog appears twice when the app is first installed
+- feat(YouTube - Player components): Add Hide Chat summary in live chat setting inotia00/ReVanced_Extended#2545
 
-- fix(YouTube/Shorts components): Shorts shown in Home feed inotia00/ReVanced_Extended#2467
+- feat(YouTube - Seekbar components): Remove Enable Cairo seekbar setting, which is no longer needed (Enabled by default in YouTube 19.34.42+)
+- feat(YouTube - Shorts components): Add Change Shorts background repeat state setting (YouTube 19.34.42+)
+- feat(YouTube - Shorts components): Add Custom actions in flyout menu setting (YouTube 19.05.36+)
+- feat(YouTube - Shorts components): Add Custom actions in toolbar setting
+- feat(YouTube - Swipe controls): Change the setting name Enable watch panel gestures to Disable watch panel gestures, and change the setting name Enable swipe to change video to Disable swipe to change video
+- feat(YouTube - Shorts components): Add Restore old player layout setting (YouTube 18.29.38 ~ 19.16.39) 
+- fix(YouTube): When clicking on timestamps in comments, playback speed sometimes changes to 1.0x (unpatched YouTube bug)
+- fix(YouTube - Custom Shorts action buttons): Patch not working on YouTube 19.38.41+
+- fix(YouTube - Seekbar components): Custom seekbar color not applied to gradient seekbar in YouTube 19.34.42+
+- fix(YouTube - Shorts components): Hide Shorts shelves not hiding in home feed in certain situations
 
-- fix(YouTube/Shorts components): Hide Shorts shelves setting sometimes hides shelves in the library tab
-- fix(YouTube/SponsorBlock): wrong segment behavior selected inotia00/ReVanced_Extended#2468
-- fix(YouTube/Toolbar components): premium header not applied when Hide YouTube Doodles is turned on
-
-- fix(YouTube/Video playback): custom playback speed not working due to A/B tests ReVanced/revanced-patches#3817
-- feat(YouTube/YT - GmsCore support): add patch option Disable GmsService Broker inotia00/ReVanced_Extended#2442 (comment)
-- feat(YouTube/Player components): add Sanitize video subtitle setting
-
-- feat(YouTube/Spoof app version): change the default to off and show the dialog when the app is first launched (YouTube 19.16.39+) inotia00/ReVanced_Extended#2419 (comment)
-
-- fix(YouTube/Hide ads): Hide view products banner setting not working inotia00/ReVanced_Extended#2437
-- fix(YouTube/Hide feed components): Hide carousel shelf setting hides the library shelf
-- fix(YouTube/Hide feed components): new type of Playable is not hidden
-- fix(YouTube/Shorts components): app crashes when Replace channel handle setting is turned on
-
-
-- Check this section to read more about the new changes: https://github.com/inotia00/revanced-patches/releases
+- Checkout this site to read more about the newly added changes: https://github.com/inotia00/revanced-patches/releases
 
 # Important Announcement 
 
